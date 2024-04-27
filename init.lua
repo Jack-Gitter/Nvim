@@ -15,8 +15,16 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4 
 vim.opt.expandtab = true
 vim.cmd.colorscheme('embark')
-vim.opt.statuscolumn = "%= %r %= "
+vim.opt.statuscolumn = "%= %#Normal# %r %= "
 
+
+-- global bindings
+vim.g.mapleader = " "
 
 -- telescope keybinings
-vim.keymap.set("n", "<space>fb", function() require("telescope").extensions.file_browser.file_browser() end)
+local t_builtin = require('telescope.builtin')
+vim.keymap.set("n", "<leader>fb", function() require("telescope").extensions.file_browser.file_browser() end)
+vim.keymap.set('n', '<leader>ff', t_builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', t_builtin.live_grep, {})
+vim.keymap.set('n', '<leader>bb', t_builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', t_builtin.help_tags, {})
