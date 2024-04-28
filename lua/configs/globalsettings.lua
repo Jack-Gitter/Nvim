@@ -6,6 +6,6 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4 
 vim.opt.expandtab = true
 vim.cmd.colorscheme('embark')
-vim.opt.statuscolumn = "%=%r|%="
+vim.opt.statuscolumn = "%{get(b:, 'gitsigns_status', '')} %= %r | %= %{b:gitsigns_status}"
 
 vim.keymap.set('i', 'jk', '<Esc>')
