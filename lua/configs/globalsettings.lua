@@ -6,4 +6,6 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4 
 vim.opt.expandtab = true
 vim.cmd.colorscheme('embark')
-vim.opt.statuscolumn = "%= %#Normal# %r %= "
+vim.opt.statuscolumn = "%=%r|%="
+
+vim.keymap.set('i', 'jk', '<Esc>')
