@@ -17,17 +17,12 @@ return require('packer').startup(function(use)
         require('packer').sync()
     end
     use 'wbthomason/packer.nvim'
-    use {'embark-theme/vim', as = 'embark'}
+    use 'https://github.com/lewis6991/gitsigns.nvim'
     use 'nvim-treesitter/nvim-treesitter'
     use 'nvim-tree/nvim-web-devicons'
-    use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {{'nvim-lua/plenary.nvim'}}}
     use 'tmsvg/pear-tree'
-    use {
-        "nvim-telescope/telescope-file-browser.nvim",
-        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-    }
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
+    use {'embark-theme/vim', as = 'embark'}
+    use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {{'nvim-lua/plenary.nvim'}}}
+    use {"nvim-telescope/telescope-file-browser.nvim", requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"}}
+    use {'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
 end)
