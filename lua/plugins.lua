@@ -22,6 +22,9 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'tmsvg/pear-tree'
     use 'karb94/neoscroll.nvim'
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use 'neovim/nvim-lspconfig'
     use {'embark-theme/vim', as = 'embark'}
     use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {{'nvim-lua/plenary.nvim'}}}
     use {"nvim-telescope/telescope-file-browser.nvim", requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"}}
