@@ -1,4 +1,3 @@
-
 local ensure_packer = function()
     local fn = vim.fn
     local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -22,9 +21,15 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'tmsvg/pear-tree'
     use 'karb94/neoscroll.nvim'
+
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use 'neovim/nvim-lspconfig'
+
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use {"L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp"}
+
     use {'embark-theme/vim', as = 'embark'}
     use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {{'nvim-lua/plenary.nvim'}}}
     use {"nvim-telescope/telescope-file-browser.nvim", requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"}}

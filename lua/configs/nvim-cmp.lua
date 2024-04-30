@@ -1,22 +1,15 @@
-require('mason').setup()
-require('mason-lspconfig').setup()
-
-local lspconfig = require('lspconfig')
-
-
-
 local cmp = require'cmp'
 
 -- Global setup.
 cmp.setup({
-    snippet = {
-        expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-        end,
-    },
+  snippet = {
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+    end,
+  },
   window = {
-     completion = cmp.config.window.bordered(),
-     documentation = cmp.config.window.bordered(),
+    -- completion = cmp.config.window.bordered(),
+    -- documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
@@ -26,6 +19,7 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
+    { name = 'luasnip' },
   }, {
     { name = 'buffer' },
   })
@@ -34,5 +28,7 @@ cmp.setup({
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.vtsls.setup({capabilities=capabilities})
-lspconfig.lua_ls.setup({capabilities=capabilities})
+require('lspconfig')[].setup {
+  capabilities = capabilities
+
+}
