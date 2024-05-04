@@ -6,7 +6,8 @@ require('telescope').setup{
                 [";"] = actions.close
             },
             n = {
-                [";"] = actions.close
+                [";"] = actions.close,
+                ['<s-d>'] = actions.delete_buffer
             },
         },
     },
