@@ -10,7 +10,11 @@ require('telescope').setup{
             },
         },
     },
-    pickers = {},
+    pickers = {
+        buffers = {
+            show_current_buffer = false
+        }
+    },
     extensions = {
         file_browser = {
             mappings = {
