@@ -19,10 +19,12 @@ cmp.setup({
      documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({
-    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-k>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-j>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<s-j>'] = cmp.mapping.select_next_item(),
+    ['<s-k>'] = cmp.mapping.select_prev_item()
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
@@ -36,3 +38,4 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lspconfig.vtsls.setup({capabilities=capabilities})
 lspconfig.lua_ls.setup({capabilities=capabilities})
+
