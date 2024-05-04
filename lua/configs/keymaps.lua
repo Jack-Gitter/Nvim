@@ -13,3 +13,7 @@ vim.keymap.set('n', '<leader>i', t_builtin.lsp_implementations, {})
 vim.keymap.set('n', '<leader>v', t_builtin.git_branches, {})
 vim.keymap.set('n', '<leader>p', '<C-6>', {})
 vim.keymap.set('n', '<leader>e', function () t_builtin.diagnostics({bufnr=0}) end, {})
+
+-- leap bindings
+vim.keymap.set('n', 'f', '<Plug>(leap-forward)')
+vim.keymap.set('n', 'F', '<Plug>(leap-backward)')
