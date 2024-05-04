@@ -3,7 +3,8 @@ require('telescope').setup{
     defaults = {
         mappings = {
             i = {
-                [";"] = actions.close
+                [";"] = actions.close,
+                ["<s-return>"] = actions.select_default
             },
             n = {
                 [";"] = actions.close,
@@ -20,7 +21,7 @@ require('telescope').setup{
         file_browser = {
             mappings = {
                 ["i"] = {
-                    [";"] = actions.close
+                    [";"] = actions.close,
                 },
                 ["n"] = {
                     [";"] = actions.close
