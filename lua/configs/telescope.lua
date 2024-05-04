@@ -4,7 +4,8 @@ require('telescope').setup{
         mappings = {
             i = {
                 [";"] = actions.close,
-                ["<s-return>"] = actions.select_default
+                ["<s-return>"] = actions.select_default,
+                ['<s-d>'] = actions.delete_buffer
             },
             n = {
                 [";"] = actions.close,
