@@ -5,6 +5,8 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.laststatus = 3
+vim.opt.ignorecase = true
+vim.opt.hlsearch = false
 --vim.opt.statuscolumn = "%=%r|%="
 
 -- vim cmds
@@ -17,6 +19,8 @@ vim.keymap.set('i', 'jk', '<Esc>')
 vim.api.nvim_set_hl(0, 'GitSignsAdd', { fg = "#66ff00", bg = "" })
 vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = "#FFFF00", bg = "" })
 vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = "#FF1100", bg = "" })
+vim.api.nvim_set_hl(0, 'Search', { fg = "", bg = "#3880ff" })
+vim.api.nvim_set_hl(0, 'IncSearch', { fg = "", bg = "#3880ff" })
 
 
 
