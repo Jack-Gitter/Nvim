@@ -1,5 +1,5 @@
 -- global bindings
-vim.keymap.set('n', '<leader>p', '<C-6>', {})
+vim.keymap.set('n', '<s-p>', '<C-6>', {})
 vim.g.mapleader = " "
 
 -- telescope keybinings

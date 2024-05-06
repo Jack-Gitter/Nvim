@@ -13,3 +13,4 @@ require("configs/neoscroll")
 require("configs/autocommands")
 require("configs/lspconfig")
 require("configs/leap")
+
