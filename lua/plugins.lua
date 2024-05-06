@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
     use 'neovim/nvim-lspconfig'
 
+    use 'akinsho/git-conflict.nvim'
+
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use {"L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp"}
