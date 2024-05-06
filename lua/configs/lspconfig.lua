@@ -3,8 +3,6 @@ require('mason-lspconfig').setup()
 
 local lspconfig = require('lspconfig')
 
-
-
 local cmp = require'cmp'
 
 -- Global setup.
@@ -37,5 +35,9 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lspconfig.vtsls.setup({capabilities=capabilities})
-lspconfig.lua_ls.setup({capabilities=capabilities})
+lspconfig.lua_ls.setup({capabilities=capabilities, settings = {Lua = {diagnostics = {globals = {'vim'}}}}})
 
+vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
+vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
+vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
+vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
