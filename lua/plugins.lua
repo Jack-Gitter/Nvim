@@ -21,11 +21,10 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'tmsvg/pear-tree'
     use 'karb94/neoscroll.nvim'
-
+    use 'numToStr/Comment.nvim'
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use 'neovim/nvim-lspconfig'
-
     use 'akinsho/git-conflict.nvim'
 
     use 'hrsh7th/nvim-cmp'
@@ -38,4 +37,5 @@ return require('packer').startup(function(use)
     use {'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
 
     use {'ggandor/leap.nvim', requires = {'tpope/vim-repeat'}}
+
 end)
