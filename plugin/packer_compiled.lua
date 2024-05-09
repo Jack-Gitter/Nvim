@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -89,10 +94,20 @@ _G.packer_plugins = {
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/embark",
     url = "https://github.com/embark-theme/vim"
   },
+  ["git-conflict.nvim"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/git-conflict.nvim",
+    url = "https://github.com/akinsho/git-conflict.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -158,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
   }
 }
 

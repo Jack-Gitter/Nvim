@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
     use 'neovim/nvim-lspconfig'
     use 'akinsho/git-conflict.nvim'
+    use 'mfussenegger/nvim-lint'
 
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'

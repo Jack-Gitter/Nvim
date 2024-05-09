@@ -1,6 +1,7 @@
 -- global bindings
-vim.keymap.set('n', '<s-b>', '<C-6>', {})
 vim.g.mapleader = " "
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('n', '<s-b>', '<C-6>', {})
 
 -- telescope keybinings
 local t_builtin = require('telescope.builtin')
@@ -22,8 +23,6 @@ vim.keymap.set('n', 'F', '<Plug>(leap-backward)')
 local gitsigns = require('gitsigns')
 vim.keymap.set('n', '<leader>h', gitsigns.preview_hunk, {})
 
+-- diagnostics
+vim.keymap.set("n", "<leader>sd", function() vim.diagnostic.open_float() end, {})
 
-vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
-vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
-vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
-vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
