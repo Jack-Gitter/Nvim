@@ -36,6 +36,14 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lspconfig.vtsls.setup({capabilities=capabilities})
 lspconfig.lua_ls.setup({capabilities=capabilities, settings = {Lua = {diagnostics = {globals = {'vim'}}}}})
+lspconfig.eslint.setup({
+  on_attach = function(_, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+})
 
 vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
 vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })

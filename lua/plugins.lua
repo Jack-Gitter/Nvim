@@ -22,11 +22,11 @@ return require('packer').startup(function(use)
     use 'tmsvg/pear-tree'
     use 'karb94/neoscroll.nvim'
     use 'numToStr/Comment.nvim'
-    use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use 'neovim/nvim-lspconfig'
     use 'akinsho/git-conflict.nvim'
-    use 'mfussenegger/nvim-lint'
+
+    use "williamboman/mason.nvim"
 
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
