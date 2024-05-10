@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
+  ["mason-nvim-lint"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/mason-nvim-lint",
+    url = "https://github.com/rshkarin/mason-nvim-lint"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/mason.nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
