@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
     use 'akinsho/git-conflict.nvim'
 
     use "williamboman/mason.nvim"
+    use "mfussenegger/nvim-lint"
+    use "rshkarin/mason-nvim-lint"
 
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'

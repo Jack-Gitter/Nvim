@@ -7,6 +7,7 @@ vim.opt.expandtab = true
 vim.opt.laststatus = 3
 vim.opt.ignorecase = true
 vim.opt.hlsearch = false
+vim.lsp.set_log_level("debug")
 
 -- vim cmds
 vim.cmd.colorscheme('embark')
