@@ -14,12 +14,24 @@ require('telescope').setup{
         },
     },
     pickers = {
+        find_files = {
+            theme = "dropdown",
+            previewer = false
+        },
         buffers = {
+            theme = "dropdown",
+            previewer = false,
             show_current_buffer = false
-        }
+        },
+        git_branches = {
+            theme = "dropdown",
+            previewer = false
+        },
     },
     extensions = {
         file_browser = {
+            theme = "dropdown",
+            previewer = false,
             mappings = {
                 ["i"] = {
                     [";"] = actions.close,
