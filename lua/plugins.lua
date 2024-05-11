@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
     use 'neovim/nvim-lspconfig'
     use 'akinsho/git-conflict.nvim'
+    use 'rhysd/conflict-marker.vim'
 
     use "williamboman/mason.nvim"
     use "mfussenegger/nvim-lint"
