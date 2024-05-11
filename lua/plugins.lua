@@ -16,10 +16,9 @@ return require('packer').startup(function(use)
         require('packer').sync()
     end
     use 'wbthomason/packer.nvim'
-    use 'https://github.com/lewis6991/gitsigns.nvim'
+    use 'lewis6991/gitsigns.nvim'
     use 'nvim-treesitter/nvim-treesitter'
     use 'nvim-tree/nvim-web-devicons'
-    use 'tmsvg/pear-tree'
     use 'karb94/neoscroll.nvim'
     use 'numToStr/Comment.nvim'
     use "williamboman/mason-lspconfig.nvim"
@@ -40,5 +39,7 @@ return require('packer').startup(function(use)
     use {'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
 
     use {'ggandor/leap.nvim', requires = {'tpope/vim-repeat'}}
+
+    use "windwp/nvim-autopairs"
 
 end)

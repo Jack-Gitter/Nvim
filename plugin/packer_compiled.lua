@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -163,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["pear-tree"] = {
-    loaded = true,
-    path = "/Users/jackgitter/.local/share/nvim/site/pack/packer/start/pear-tree",
-    url = "https://github.com/tmsvg/pear-tree"
   },
   ["plenary.nvim"] = {
     loaded = true,
