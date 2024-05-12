@@ -1,4 +1,6 @@
 local actions = require('telescope.actions')
+local fb_actions = require "telescope".extensions.file_browser.actions
+
 require('telescope').setup{
     defaults = {
         mappings = {
@@ -35,9 +37,13 @@ require('telescope').setup{
             mappings = {
                 ["i"] = {
                     [";"] = actions.close,
+                    ["<s-a>"] = fb_actions.create,
+                    ["<s-m>"] = fb_actions.move
                 },
                 ["n"] = {
-                    [";"] = actions.close
+                    [";"] = actions.close,
+                    ["a"] = fb_actions.create,
+                    ["m"] = fb_actions.move
                 },
             },
         },
