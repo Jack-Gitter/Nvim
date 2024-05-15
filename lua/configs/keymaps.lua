@@ -15,6 +15,7 @@ vim.keymap.set('n', '<leader>r', t_builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>v', t_builtin.git_branches, {})
 vim.keymap.set('n', '<leader>e', function () t_builtin.diagnostics({bufnr=0}) end, {})
 vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, {})
+vim.keymap.set('n', ';', '%', {})
 
 -- leap bindings
 vim.keymap.set('n', 'f', '<Plug>(leap-forward)')
