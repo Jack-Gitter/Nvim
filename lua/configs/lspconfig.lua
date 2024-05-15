@@ -35,6 +35,7 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lspconfig.vtsls.setup({capabilities=capabilities})
+lspconfig.gopls.setup({capabilities=capabilities})
 lspconfig.lua_ls.setup({capabilities=capabilities, settings = {Lua = {diagnostics = {globals = {'vim'}}}}})
 
 vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
