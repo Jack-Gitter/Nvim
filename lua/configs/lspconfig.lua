@@ -34,7 +34,7 @@ cmp.setup({
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.vtsls.setup({capabilities=capabilities})
+lspconfig.tsserver.setup({capabilities=capabilities})
 lspconfig.gopls.setup({capabilities=capabilities})
 lspconfig.lua_ls.setup({capabilities=capabilities, settings = {Lua = {diagnostics = {globals = {'vim'}}}}})
 
@@ -52,6 +52,6 @@ require('lint').linters_by_ft = {
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   callback = function()
-  require("lint").try_lint(nil, { ignore_errors = true })
+  require("lint").try_lint(nil, {ignore_errors = true})
   end,
 })

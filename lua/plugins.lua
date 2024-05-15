@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'akinsho/git-conflict.nvim'
     use 'rhysd/conflict-marker.vim'
+    use 'nvim-telescope/telescope-ui-select.nvim'
 
     use "williamboman/mason.nvim"
     use "mfussenegger/nvim-lint"
