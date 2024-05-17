@@ -6,10 +6,20 @@ vim.keymap.set('n', '<s-l>', '<C-6>', {})
 -- telescope keybinings
 local t_builtin = require('telescope.builtin')
 
-vim.keymap.set("n", "<leader>fe", function() require("telescope").extensions.file_browser.file_browser() end)
+vim.keymap.set("n", "<leader>fe",
+function()
+    require("telescope").extensions.file_browser.file_browser()
+    vim.api.nvim_feedkeys("f", "i", true)
+    vim.api.nvim_feedkeys("jk", "", true)
+end, {})
+
+vim.keymap.set('n', '<leader>b',
+function ()
+    t_builtin.buffers({sort_mru=true, ignore_current_buffer=true})
+    vim.api.nvim_feedkeys("jk", "", false)
+end, {})
 vim.keymap.set("n", "<leader>ff", t_builtin.find_files, {})
 vim.keymap.set('n', '<leader>gr', t_builtin.live_grep, {})
-vim.keymap.set('n', '<leader>b', function () t_builtin.buffers({sort_mru=true, ignore_current_buffer=true}) end, {})
 vim.keymap.set('n', '<leader>d', t_builtin.lsp_definitions, {})
 vim.keymap.set('n', '<leader>r', t_builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>v', t_builtin.git_branches, {})
