@@ -3,6 +3,9 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 
 require('telescope').setup{
     defaults = {
+        file_ignore_patterns = {
+            "node_modules"
+        },
         mappings = {
             i = {
                 [";"] = actions.close,
