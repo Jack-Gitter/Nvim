@@ -7,7 +7,7 @@ require('telescope').setup{
             prompt_position = "top"
         },
         file_ignore_patterns = {
-            "node_modules", ".git"
+            "node_modules", "^.git/"
         },
         mappings = {
             i = {
