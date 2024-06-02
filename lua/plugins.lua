@@ -32,6 +32,8 @@ return require('packer').startup(function(use)
     use "rshkarin/mason-nvim-lint"
     use "stevearc/oil.nvim"
 
+    use "ellisonleao/glow.nvim"
+
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {{'nvim-lua/plenary.nvim'}}}
