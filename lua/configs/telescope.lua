@@ -7,7 +7,7 @@ require('telescope').setup{
             prompt_position = "top"
         },
         file_ignore_patterns = {
-            "node_modules"
+            "node_modules", ".git"
         },
         mappings = {
             i = {
@@ -24,6 +24,7 @@ require('telescope').setup{
     pickers = {
         find_files = {
             previewer = false,
+            hidden = true,
         },
         buffers = {
             previewer = false,
