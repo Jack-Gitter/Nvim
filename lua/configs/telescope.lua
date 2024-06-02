@@ -39,13 +39,9 @@ require('telescope').setup{
             mappings = {
                 ["i"] = {
                     [";"] = actions.close,
-                    ["<s-a>"] = fb_actions.create,
-                    ["<s-m>"] = fb_actions.move
                 },
                 ["n"] = {
                     [";"] = actions.close,
-                    ["a"] = fb_actions.create,
-                    ["m"] = fb_actions.move
                 },
             },
         },
