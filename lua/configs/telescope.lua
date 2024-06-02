@@ -3,6 +3,9 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 
 require('telescope').setup{
     defaults = {
+        layout_config = {
+            prompt_position = "top"
+        },
         file_ignore_patterns = {
             "node_modules"
         },
@@ -20,7 +23,7 @@ require('telescope').setup{
     },
     pickers = {
         find_files = {
-            previewer = false
+            previewer = false,
         },
         buffers = {
             previewer = false,
