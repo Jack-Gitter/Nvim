@@ -20,6 +20,9 @@ vim.api.nvim_set_hl(0, 'Search', { fg = "", bg = "#3880ff" })
 vim.api.nvim_set_hl(0, 'IncSearch', { fg = "", bg = "#3880ff" })
 vim.api.nvim_set_hl(0, 'GitSignsDeletePreview', { fg = "#FF1100", bg = "#2C2B40" })
 vim.api.nvim_set_hl(0, 'GitSignsAddPreview', { fg = "#66ff00", bg = "#2C2B40" })
+vim.api.nvim_set_hl(0, 'NormalFloat', { fg = "#ffffff", bg = "#2C2B40" })
+
+
 
 
 
