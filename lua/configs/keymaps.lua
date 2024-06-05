@@ -19,10 +19,13 @@ function ()
     vim.api.nvim_feedkeys("jk", "", false)
 end, {})
 
+
+
+
 vim.keymap.set("n", "<leader>ff", t_builtin.find_files, {})
 vim.keymap.set('n', '<leader>gr', t_builtin.live_grep, {})
 vim.keymap.set('n', '<leader>gd', t_builtin.lsp_definitions, {})
-vim.keymap.set('n', '<leader>gr', t_builtin.lsp_references, {})
+vim.keymap.set('n', '<leader>fr', t_builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>gb', t_builtin.git_branches, {})
 vim.keymap.set('n', '<leader>fe', function () t_builtin.diagnostics({bufnr=0}) end, {})
 vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, {})
@@ -37,6 +40,7 @@ vim.keymap.set('n', 'F', '<Plug>(leap-backward)')
 -- gitsigns
 local gitsigns = require('gitsigns')
 vim.keymap.set('n', '<leader>gh', gitsigns.preview_hunk, {})
+vim.keymap.set('n', '<leader>hr', gitsigns.reset_hunk)
 
 -- diagnostics
 vim.keymap.set("n", "<leader>e", function() vim.diagnostic.open_float() end, {})
