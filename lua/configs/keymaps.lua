@@ -29,7 +29,7 @@ vim.keymap.set('n', '<leader>fr', t_builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>gb', t_builtin.git_branches, {})
 vim.keymap.set('n', '<leader>fe', function () t_builtin.diagnostics({bufnr=0}) end, {})
 vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, {})
-vim.keymap.set('n', '<leader>h', vim.lsp.buf.hover, {})
+vim.keymap.set('n', '<leader>ho', vim.lsp.buf.hover, {})
 vim.keymap.set('n', ';', '%', {})
 vim.keymap.set('n', '<leader>md', function() vim.cmd("Glow") end, {})
 
