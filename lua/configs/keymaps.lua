@@ -28,6 +28,7 @@ vim.keymap.set('n', '<leader>ew', function () t_builtin.diagnostics({bufnr=0}) e
 vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, {})
 vim.keymap.set('n', '<leader>ho', vim.lsp.buf.hover, {})
 vim.keymap.set('n', ';', '%', {})
+vim.keymap.set('v', ';', '%', {})
 vim.keymap.set('n', '<leader>md', function() vim.cmd("Glow") end, {})
 
 -- leap bindings
