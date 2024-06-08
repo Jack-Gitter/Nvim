@@ -13,7 +13,6 @@ require('telescope').setup{
                 [";"] = actions.close,
                 ["<s-return>"] = actions.select_default,
                 ['<s-d>'] = actions.delete_buffer,
-                ['jk'] = { "<esc>", type = "command" }
             },
             n = {
                 [";"] = actions.close,
