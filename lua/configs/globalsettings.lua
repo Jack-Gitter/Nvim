@@ -22,7 +22,8 @@ vim.api.nvim_set_hl(0, 'IncSearch', { fg = "", bg = "#3880ff" })
 vim.api.nvim_set_hl(0, 'GitSignsDeletePreview', { fg = "#FF1100", bg = "#2C2B40" })
 vim.api.nvim_set_hl(0, 'GitSignsAddPreview', { fg = "#66ff00", bg = "#2C2B40" })
 vim.api.nvim_set_hl(0, 'NormalFloat', { fg = "#ffffff", bg = "#2C2B40" })
-vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#dc6c3a', bg = ''})
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#3781fe', bg = ''})
+vim.api.nvim_set_hl(0, 'CursorLine', { fg = '', bg = ''})
 
 -- diagnostics settings
 vim.diagnostic.config({ virtual_text = false })
