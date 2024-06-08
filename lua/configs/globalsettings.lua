@@ -7,6 +7,7 @@ vim.opt.expandtab = true
 vim.opt.laststatus = 3
 vim.opt.ignorecase = true
 vim.opt.hlsearch = false
+vim.opt.cursorline = true
 vim.lsp.set_log_level("debug")
 
 -- vim cmds
@@ -21,6 +22,7 @@ vim.api.nvim_set_hl(0, 'IncSearch', { fg = "", bg = "#3880ff" })
 vim.api.nvim_set_hl(0, 'GitSignsDeletePreview', { fg = "#FF1100", bg = "#2C2B40" })
 vim.api.nvim_set_hl(0, 'GitSignsAddPreview', { fg = "#66ff00", bg = "#2C2B40" })
 vim.api.nvim_set_hl(0, 'NormalFloat', { fg = "#ffffff", bg = "#2C2B40" })
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#dc6c3a', bg = ''})
 
 -- diagnostics settings
 vim.diagnostic.config({ virtual_text = false })
