@@ -22,14 +22,17 @@ require('telescope').setup{
     },
     pickers = {
         find_files = {
+            sorting_strategy = "ascending",
             previewer = false,
             hidden = true,
         },
         buffers = {
+            sorting_strategy = "ascending",
             previewer = false,
             show_current_buffer = false
         },
         git_branches = {
+            sorting_strategy = "ascending",
             previewer = false
         },
     },
