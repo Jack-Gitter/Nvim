@@ -1,5 +1,4 @@
 local actions = require('telescope.actions')
-local fb_actions = require "telescope".extensions.file_browser.actions
 
 require('telescope').setup{
     defaults = {
@@ -13,7 +12,8 @@ require('telescope').setup{
             i = {
                 [";"] = actions.close,
                 ["<s-return>"] = actions.select_default,
-                ['<s-d>'] = actions.delete_buffer
+                ['<s-d>'] = actions.delete_buffer,
+                ['jk'] = { "<esc>", type = "command" }
             },
             n = {
                 [";"] = actions.close,
