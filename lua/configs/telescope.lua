@@ -38,6 +38,7 @@ require('telescope').setup{
     },
     extensions = {
         file_browser = {
+           sorting_strategy = "ascending",
            previewer = false,
             mappings = {
                 ["i"] = {
