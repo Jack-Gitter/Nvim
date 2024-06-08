@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('n', '<s-l>', '<C-6>', {})
+vim.keymap.set('n', '<leader>z', 'zf', {})
 
 -- telescope keybinings
 local t_builtin = require('telescope.builtin')
