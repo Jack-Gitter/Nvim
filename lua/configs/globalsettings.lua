@@ -8,6 +8,8 @@ vim.opt.laststatus = 3
 vim.opt.ignorecase = true
 vim.opt.hlsearch = false
 vim.opt.cursorline = true
+vim.opt.eol = false
+vim.opt.fixeol = false
 vim.lsp.set_log_level("debug")
 
 -- vim cmds
