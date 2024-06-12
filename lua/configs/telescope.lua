@@ -28,7 +28,15 @@ require('telescope').setup{
         buffers = {
             sorting_strategy = "ascending",
             previewer = false,
-            show_current_buffer = false
+            show_current_buffer = false,
+            mappings = {
+                i = {
+                    ['<s-d>'] = actions.delete_buffer
+                },
+                n = {
+                    ['<s-d>'] = actions.delete_buffer
+                },
+	    }
         },
         git_branches = {
             sorting_strategy = "ascending",
