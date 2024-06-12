@@ -13,11 +13,9 @@ require('telescope').setup{
             i = {
                 [";"] = actions.close,
                 ["<s-return>"] = actions.select_default,
-                ['<s-d>'] = actions.delete_buffer,
             },
             n = {
                 [";"] = actions.close,
-                ['<s-d>'] = actions.delete_buffer
             },
         },
     },
