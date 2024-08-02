@@ -26,9 +26,9 @@ require('telescope').setup{
             hidden = true,
         },
         live_grep = {
-            sorting_strategy = "ascending",
-            previewer = false,
-            hidden = true,
+            additional_args = function(opts)
+                return {"--hidden"}
+            end
         },
         buffers = {
             sorting_strategy = "ascending",
