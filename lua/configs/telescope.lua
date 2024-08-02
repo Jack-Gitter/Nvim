@@ -25,6 +25,11 @@ require('telescope').setup{
             previewer = false,
             hidden = true,
         },
+        live_grep = {
+            sorting_strategy = "ascending",
+            previewer = false,
+            hidden = true,
+        },
         buffers = {
             sorting_strategy = "ascending",
             previewer = false,
