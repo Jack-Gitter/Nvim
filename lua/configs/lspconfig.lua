@@ -30,7 +30,7 @@ cmp.setup({
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.tsserver.setup({capabilities=capabilities})
+lspconfig.ts_ls.setup({capabilities=capabilities})
 lspconfig.gopls.setup({capabilities=capabilities})
 lspconfig.lua_ls.setup({capabilities=capabilities, settings = {Lua = {diagnostics = {globals = {'vim'}}}}})
 
