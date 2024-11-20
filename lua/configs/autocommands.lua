@@ -8,8 +8,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 vim.api.nvim_create_autocmd('BufWritePost', {
     desc = 'highlight yanked texted',
-    pattern = {'javascript', 'typescript'},
-    callback = function ()
-        vim.cmd(":Prettier")
-    end
+    pattern = {'*.ts', '*.js'},
+    command = "Prettier"
 })
