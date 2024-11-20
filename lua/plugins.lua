@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
     use {'ggandor/leap.nvim', requires = {'tpope/vim-repeat'}}
 
     use "windwp/nvim-autopairs"
+    use "prettier/vim-prettier"
 
 
 end)
