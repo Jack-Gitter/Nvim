@@ -48,20 +48,5 @@ require('telescope').setup{
             previewer = false
         },
     },
-    extensions = {
-        file_browser = {
-           sorting_strategy = "ascending",
-           previewer = false,
-            mappings = {
-                ["i"] = {
-                    [";"] = actions.close,
-                },
-                ["n"] = {
-                    [";"] = actions.close,
-                },
-            },
-        },
-    }
 }
-require('telescope').load_extension "file_browser"
 require('telescope').load_extension "ui-select"
