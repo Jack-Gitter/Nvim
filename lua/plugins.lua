@@ -46,6 +46,5 @@ return require('packer').startup(function(use)
 
     use "windwp/nvim-autopairs"
     use "prettier/vim-prettier"
-
-
+    use { "ibhagwan/fzf-lua", requires = { "nvim-tree/nvim-web-devicons" } }
 end)
